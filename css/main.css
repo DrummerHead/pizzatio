@@ -1,0 +1,157 @@
+/* Stylesheet for pizzatio.com */
+
+
+/*
+ * Baseline
+ * ====================== */
+
+html {
+  font-family: Palatino, Georgia, serif;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  background-image: url('../img/dark-wood.png');
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* End Baseline*/
+
+
+
+
+/*
+ * Persistent
+ * ====================== */
+
+[role='banner'] {
+}
+[role='contentinfo'] {
+}
+main {
+}
+.vessel {
+  width: 60em;
+  margin: 0 auto;
+  background-image: url('../img/cream.png');
+  padding: .1em 1em;
+}
+
+
+/* End Persistent */
+
+
+
+
+/*
+ * Modular
+ * ====================== */
+
+/* End Modular */
+
+
+
+
+
+
+/*
+ * Specific page: Landing
+ * ====================== */
+
+/* End Specific page: Landing */
+
+
+
+
+/*
+ * Specific page: Acerca
+ * ====================== */
+
+/* End Specific page: Acerca */
+
+
+
+
+/*
+ * Specific page: Menu
+ * ====================== */
+
+/* End Specific page: Menu */
+
+
+
+
+/*
+ * Specific page: Fotos
+ * ====================== */
+
+/* End Specific page: Fotos */
+
+
+
+
+/*
+ * Specific page: Contacto
+ * ====================== */
+
+/* End Specific page: Contacto */
+
+
+
+
+/*
+ * Media queries
+ * ====================== */
+
+/* End Media queries */
+
+
+
+
+/*
+ * Print
+ * ====================== */
+
+/* End Print */
+
+
+
+
+
+/*
+ * x
+ * ====================== */
+
+/* End x */
+
+/*
+ * Specific page: x
+ * ====================== */
+
+/* End Specific page: x */
