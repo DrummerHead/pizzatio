@@ -8,6 +8,7 @@
 html {
   font-family: Palatino, Georgia, serif;
   font-size: 100%;
+  line-height: 1.4;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -53,14 +54,22 @@ table {
 
 
 [role='banner'] nav:before,
-[role='banner'] nav:after {
+[role='banner'] nav:after,
+[role='contentinfo'] dl:before,
+[role='contentinfo'] dl:after {
   content: '';
   display: table;
 }
-[role='banner'] nav:after {
+[role='banner'] nav:after,
+[role='contentinfo'] dl:after {
   clear: both;
 }
 
+.vessel {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
 /* End Subscriptions */
 
 
@@ -71,12 +80,17 @@ table {
  * ====================== */
 
 [role='banner'] {
-  margin: 1.9em 0;
+  margin: 2.2em 0;
   background-color: #240f0e;
 }
-[role='banner'] .vessel {
+[role='banner'] .vessel,
+[role='contentinfo']  .vessel {
   background-color: transparent;
   background-image: none;
+}
+[role='banner'] .vessel {
+  padding-left: 0;
+  padding-right: 0;
 }
 [role='banner'] nav {
 }
@@ -89,7 +103,7 @@ table {
 }
 [role='navigation'] a {
   float: left;
-  padding: 1em;
+  padding: .75em 1em;
   color: #e1c186;
   text-decoration: none;
 }
@@ -97,15 +111,10 @@ table {
   background-color: #27333c;
 }
 
-
-
-
-
-
 main {
 }
 .vessel {
-  max-width: 60em;
+  max-width: 64em;
   margin: 0 auto;
   padding: .1em 1.5em;
   position: relative;
@@ -117,7 +126,7 @@ main {
   width: 300px;
   height: 300px;
   position: absolute;
-  top: -6em;
+  top: -6.2em;
   left: -1.5em;
 }
 .brand img {
@@ -127,6 +136,27 @@ main {
 }
 
 [role='contentinfo'] {
+  background-color: #871103;
+  color: #e8d8b4;
+}
+[role='contentinfo'] dl {
+  width: 66.6666%;
+  font-size: 1.2em;
+}
+[role='contentinfo'] dt {
+  float: left;
+  clear: left;
+  min-width: 9em;
+  margin: 0 .6em 0 0;
+}
+[role='contentinfo'] dd {
+  float: left;
+  margin: 0;
+}
+.copyright {
+  position: absolute;
+  right: 1.75em;
+  bottom: 1.4em;
 }
 
 /* End Persistent */
