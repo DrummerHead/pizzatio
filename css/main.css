@@ -38,6 +38,9 @@ a:active,
 a:hover {
   outline: 0;
 }
+img {
+  max-width: 100%;
+}
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -53,6 +56,10 @@ table {
  * ====================== */
 
 
+.vessel:before,
+.vessel:after,
+.row:before,
+.row:after,
 [role='banner'] nav:before,
 [role='banner'] nav:after,
 [role='contentinfo'] dl:before,
@@ -60,6 +67,8 @@ table {
   content: '';
   display: table;
 }
+.vessel:after,
+.row:after,
 [role='banner'] nav:after,
 [role='contentinfo'] dl:after {
   clear: both;
@@ -174,6 +183,40 @@ nav ul {
   margin: 0;
   padding: 0;
 }
+#jorge {
+  display: block;
+  width: 100%;
+}
+
+.row {
+  margin: 0 0 1em 0;
+}
+.one-third,
+.two-third,
+.two-thirds,
+.one-half {
+  float: left;
+  margin: 0 2% 0 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.one-third {
+  width: 32%;
+}
+.two-third,
+.two-thirds {
+  width: 66%;
+}
+.one-half {
+  width: 49%;
+}
+.one-third:last-child,
+.one-half:last-child,
+.two-third:last-child,
+.two-thirds:last-child {
+  margin-right: 0;
+}
 
 /* End Modular */
 
@@ -194,6 +237,19 @@ nav ul {
 /*
  * Specific page: Acerca
  * ====================== */
+
+#elevator {
+  margin-top: 1em;
+  font-size: 1.85em;
+}
+#elevator h1 {
+  font-size: 2em;
+  margin: .5em 0 .2em;
+  line-height: 1;
+}
+#elevator p {
+  margin: 0;
+}
 
 /* End Specific page: Acerca */
 
