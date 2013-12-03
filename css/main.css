@@ -258,8 +258,8 @@ nav ul {
 }
 #offer h2 {
   position: absolute;
-  right: -1.4em;
-  top: -0.4em;
+  right: -1.1em;
+  top: .5em;
   padding: 0.3em 0.7em;
   line-height: 1;
   color: #E8D8B4;
@@ -267,13 +267,16 @@ nav ul {
   -webkit-transform: rotate(15deg);
      -moz-transform: rotate(15deg);
           transform: rotate(15deg);
+  -webkit-transform-origin: 100% 50%;
+     -moz-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
 }
 #offer .row {
   background-color: #e8d8b4;
   margin: 0;
 }
 #offer .row .one-half:last-child {
-  padding: 1.5em 1em 1em .2em;
+  padding: 1.5em 1em 0 .2em;
 }
 #offer .row img {
   width: 100%;
