@@ -211,6 +211,10 @@ nav ul {
 .one-half {
   width: 49%;
 }
+.wider-separation .one-half {
+  margin: 0 6% 0 0;
+  width: 47%;
+}
 .one-third:last-child,
 .one-half:last-child,
 .two-third:last-child,
@@ -324,6 +328,36 @@ nav ul {
  * Specific page: Menu
  * ====================== */
 
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.4em;
+}
+.menu li {
+  margin: 0 0 1.2em;
+}
+.menu span {
+  display: block;
+  position: relative;
+  line-height: 1;
+}
+.menu strong {
+  display: block;
+  border-bottom: .1em dotted #ccc;
+}
+.menu b {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.menu small {
+  display: block;
+  font-size: .75em;
+  color: #555;
+  line-height: 1;
+  margin: .5em 0;
+}
 /* End Specific page: Menu */
 
 
