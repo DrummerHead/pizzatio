@@ -292,6 +292,12 @@ nav ul {
   font-size: 2em;
   float: right;
 }
+
+#cta {
+  padding: 1.1em 2em;
+  font-size: 2em;
+  text-align: center;
+}
 /* End Specific page: Landing */
 
 
