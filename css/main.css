@@ -271,6 +271,14 @@ nav ul {
      -moz-transform-origin: 100% 50%;
           transform-origin: 100% 50%;
 }
+#offer h2 a {
+  color: #E8D8B4;
+  text-decoration: none;
+}
+#offer h2 a:hover {
+  color: #E8D8B4;
+  text-decoration: underline;
+}
 #offer .row {
   background-color: #e8d8b4;
   margin: 0;
