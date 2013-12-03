@@ -218,6 +218,16 @@ nav ul {
   margin-right: 0;
 }
 
+.price,
+.price ins {
+  font-weight: bold;
+  text-decoration: none;
+  color: #0b0b0b;
+}
+.price del {
+  font-weight: normal;
+  color: #808080;
+}
 /* End Modular */
 
 
@@ -227,15 +237,6 @@ nav ul {
 
 /*
  * Specific page: Landing
- * ====================== */
-
-/* End Specific page: Landing */
-
-
-
-
-/*
- * Specific page: Acerca
  * ====================== */
 
 #elevator {
@@ -250,6 +251,52 @@ nav ul {
 #elevator p {
   margin: 0;
 }
+
+#offer {
+  position: relative;
+  font-size: 1.5em;
+}
+#offer h2 {
+  position: absolute;
+  right: -1.4em;
+  top: -0.4em;
+  padding: 0.3em 0.7em;
+  line-height: 1;
+  color: #E8D8B4;
+  background-color: #871103;
+  -webkit-transform: rotate(15deg);
+     -moz-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+#offer .row {
+  background-color: #e8d8b4;
+  margin: 0;
+}
+#offer .row .one-half:last-child {
+  padding: 1.5em 1em 1em .2em;
+}
+#offer .row img {
+  width: 100%;
+  display: block;
+}
+#offer .one-half > strong {
+  font-size: 1.4em;
+}
+#offer p {
+  margin: .25em 0;
+}
+#offer .one-half .price {
+  font-size: 2em;
+  float: right;
+}
+/* End Specific page: Landing */
+
+
+
+
+/*
+ * Specific page: Acerca
+ * ====================== */
 
 /* End Specific page: Acerca */
 
