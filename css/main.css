@@ -232,6 +232,12 @@ nav ul {
   font-weight: normal;
   color: #808080;
 }
+
+#cta {
+  padding: 1.1em 2em;
+  font-size: 2em;
+  text-align: center;
+}
 /* End Modular */
 
 
@@ -305,11 +311,6 @@ nav ul {
   float: right;
 }
 
-#cta {
-  padding: 1.1em 2em;
-  font-size: 2em;
-  text-align: center;
-}
 /* End Specific page: Landing */
 
 
@@ -328,6 +329,10 @@ nav ul {
  * Specific page: Menu
  * ====================== */
 
+#menu h1 {
+  font-size: 2.3em;
+  margin: 1em 0 .8em;
+}
 .menu {
   list-style-type: none;
   padding: 0;
