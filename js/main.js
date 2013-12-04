@@ -10,6 +10,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // create all necessary modal elements
     var gallerySection = document.getElementById('gallery');
 
+    var modalBackground = document.createElement('div');
+    modalBackground.id = 'galleryModalBackground';
+
     var modal = document.createElement('div');
     modal.id = 'galleryModal';
 
@@ -20,9 +23,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     modal.appendChild(galleryImage);
     modal.appendChild(modalClose);
+    modalBackground.appendChild(modal);
 
     // append modal elements to document
-    gallery.parentNode.insertBefore(modal, gallery);
+    gallery.parentNode.insertBefore(modalBackground, gallery);
 
     // fetch all gallery links
     var galleryLinks = document.querySelectorAll('.gallery a');
@@ -45,7 +49,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
       galleryLinks.item(i).addEventListener('click', galleryAction, false);
     }
 
-    // associate clicking the close modal to its behavior
+    // associate clicking the close modal to its behavior and avoid event bubbling
+    modalBackground.addEventListener('click', closeModal, false);
+    modal.addEventListener('click', function(e){e.stopPropagation()}, false);
     modalClose.addEventListener('click', closeModal, false);
   }
 
