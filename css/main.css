@@ -64,14 +64,17 @@ table {
 [role='banner'] nav:before,
 [role='banner'] nav:after,
 [role='contentinfo'] dl:before,
-[role='contentinfo'] dl:after {
+[role='contentinfo'] dl:after,
+.gallery:before,
+.gallery:after {
   content: '';
   display: table;
 }
 .vessel:after,
 .row:after,
 [role='banner'] nav:after,
-[role='contentinfo'] dl:after {
+[role='contentinfo'] dl:after,
+.gallery:after {
   clear: both;
 }
 
@@ -195,14 +198,16 @@ nav ul {
 .one-third,
 .two-third,
 .two-thirds,
-.one-half {
+.one-half,
+.gallery li {
   float: left;
   margin: 0 2% 0 0;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-.one-third {
+.one-third,
+.gallery li {
   width: 32%;
 }
 .two-third,
@@ -219,7 +224,8 @@ nav ul {
 .one-third:last-child,
 .one-half:last-child,
 .two-third:last-child,
-.two-thirds:last-child {
+.two-thirds:last-child,
+.gallery li:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -238,6 +244,21 @@ nav ul {
   padding: 1.1em 2em;
   font-size: 2em;
   text-align: center;
+}
+
+.gallery {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.gallery li {
+  margin-bottom: 2%;
+}
+.gallery a {
+  width: 100%;
+}
+.gallery img {
+  display: block;
 }
 /* End Modular */
 
