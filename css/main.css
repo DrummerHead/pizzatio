@@ -15,7 +15,8 @@ html {
 body {
   margin: 0;
   color: #0b0b0b;
-  background-image: url('../img/dark-wood.jpg');
+  background-image: url('../img/textures/dark-wood.jpg');
+  background-color: #180e0f;
 }
 article,
 aside,
@@ -127,7 +128,7 @@ main {
   margin: 0 auto;
   padding: .1em 1.5em;
   position: relative;
-  background-image: url('../img/cream.png');
+  background-image: url('../img/textures/cream.png');
   background-color: #fafafa;
 }
 .brand {
