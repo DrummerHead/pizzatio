@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // fetch .gallery element
   var gallery = document.querySelector('.gallery');
 
+  // fetch #map-canvas element
+  var googleMap = document.getElementById('map-canvas');
+
   // if .gallery element exist in document, execute gallery code
   if(document.contains(gallery)){
     // create all necessary modal elements
@@ -55,5 +58,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
     modalClose.addEventListener('click', closeModal, false);
   }
 
+  // if #map-canvas element exist in document, execute Google Maps code
+  if(document.contains(googleMap)){
+    var pizzatioLocation = new google.maps.LatLng(-34.8326333, -56.0709833);
+
+    function initialize(){
+      var mapOptions = {
+        center: pizzatioLocation,
+        scrollwheel: false,
+        zoom: 14
+      };
+
+      var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+      var marker = new google.maps.Marker({
+        position: pizzatioLocation,
+        map: map,
+        title: "Pizzatio!"
+      });
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+  }
 
 }, false);
