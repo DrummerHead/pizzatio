@@ -47,6 +47,41 @@ table {
   border-spacing: 0;
 }
 
+form {
+}
+label {
+  display: block;
+  cursor: pointer;
+}
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 100%;
+  padding: .7em .9em;
+  border: 1px solid #d1c7c7;
+  font-size: .9em;
+  background-color: #fefefe;
+  box-shadow: inset 0 0 .5em rgba(190, 190, 190, .33333);
+  font-family: sans-serif;
+  border-radius: .1em;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+input[type='radio'] {
+}
+textarea {
+  min-height: 7.7em;
+  max-height: 32em;
+  resize: vertical;
+}
+::-webkit-input-placeholder {
+  color: #777;
+}
+::-moz-placeholder {
+  color: #777;
+}
+
 /* End Baseline*/
 
 
@@ -190,7 +225,10 @@ nav ul {
 }
 
 .row {
-  margin: 0 0 1em 0;
+  margin-bottom: 1em;
+}
+form .row {
+  margin-bottom: 1.5em;
 }
 .one-third,
 .two-third,
@@ -224,6 +262,10 @@ nav ul {
 .two-thirds:last-child,
 .gallery li:nth-child(3n) {
   margin-right: 0;
+}
+
+button,
+.button {
 }
 
 .price,

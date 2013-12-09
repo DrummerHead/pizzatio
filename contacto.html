@@ -41,17 +41,19 @@
     <section id='map'>
       <h2>Contactanos!</h2>
       <form>
-        <div class='row'>
-          <label for='formName'>Nombre</label>
-          <input type='text' id='formName'>
-        </div>
-        <div class='row'>
-          <label for='formEmail'>Email</label>
-          <input type='email' id='formEmail'>
+        <div class='row wider-separation'>
+          <div class='one-half'>
+            <label for='formName'>Nombre</label>
+            <input type='text' id='formName' placeholder='Juan Pérez'>
+          </div>
+          <div class='one-half'>
+            <label for='formEmail'>Email</label>
+            <input type='email' id='formEmail' placeholder='juan_perez@yahoo.com' required>
+          </div>
         </div>
         <div class='row'>
           <label for='formMessage'>Mensaje</label>
-          <textarea id='formMessage'></textarea>
+          <textarea id='formMessage' placeholder='Adoro absoluta e incondicionalmente todos y cada uno de los productos Pizzatio' required></textarea>
         </div>
         <div class='row'>
           <label>Recomendarias Pizzatio a tus amigos?</label>
@@ -66,6 +68,10 @@
           <label>
             <input type='radio' value='indudablemente' name='recommend'>
             Indudablemente!
+          </label>
+          <label>
+            <input type='radio' value='dreamscape' name='recommend'>
+            A veces me levanto por las noches pensando en Pizzatio
           </label>
         </div>
         <div class='row'>
