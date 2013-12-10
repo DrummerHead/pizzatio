@@ -17,6 +17,8 @@ body {
   color: #0b0b0b;
   background-image: url('../img/textures/dark-wood.jpg');
   background-color: #180e0f;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 article,
 aside,
@@ -173,7 +175,6 @@ main {
 .brand {
   display: block;
   width: 300px;
-  height: 300px;
   position: absolute;
   top: -6.2em;
   left: -1.5em;
@@ -181,7 +182,6 @@ main {
 .brand img {
   display: block;
   width: 100%;
-  height: 100%;
 }
 
 [role='contentinfo'] {
@@ -189,7 +189,6 @@ main {
   color: #e8d8b4;
 }
 [role='contentinfo'] dl {
-  width: 66.6666%;
   font-size: 1.2em;
 }
 [role='contentinfo'] dt {
@@ -546,6 +545,67 @@ section > h1 {
 /*
  * Media queries
  * ====================== */
+
+@media (max-width: 932px){
+
+  [role='banner'] {
+    margin: 1em 0;
+  }
+  [role='navigation'] {
+    font-size: 1.5em;
+  }
+  .brand {
+    width: 220px;
+    left: -0.9em;
+    top: -4.6em;
+  }
+}
+@media (max-width: 707px){
+  .one-third,
+  .two-third,
+  .two-thirds,
+  .one-half,
+  .gallery li,
+  .wider-separation .one-half {
+    float: none;
+    display: block;
+    margin: 0 0 2% 0;
+  }
+  .one-third,
+  .gallery li,
+  .two-third,
+  .two-thirds,
+  .one-half,
+  .wider-separation .one-half {
+    width: 100%;
+  }
+
+  #elevator {
+    margin-top: 0;
+    font-size: 1.5em;
+  }
+  #elevator h1 {
+    font-size: 1.75em;
+    margin-top: .75em;
+  }
+  #elevator .one-third {
+    display: none;
+  }
+  #offer .row .one-half:last-child {
+    padding: .25em 1em;
+  }
+  #cta {
+    padding: 1em 0;
+    font-size: 1.5em;
+  }
+  #cta p {
+    margin: .5em 0;
+  }
+  [role='contentinfo'] dl {
+    font-size: 1em;
+  }
+}
+
 
 /* End Media queries */
 
