@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var googleMap = document.getElementById('map-canvas');
 
   // if .gallery element exist in document, execute gallery code
-  if(document.contains(gallery)){
+  if(document.contains(gallery) && window.innerWidth > 640){
     // create all necessary modal elements
     var gallerySection = document.getElementById('gallery');
 
