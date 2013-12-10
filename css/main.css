@@ -156,6 +156,7 @@ textarea {
   float: left;
   padding: .75em 1em;
   color: #e1c186;
+  text-align: center;
   text-decoration: none;
 }
 [role='navigation'] a:hover {
@@ -200,6 +201,9 @@ main {
 [role='contentinfo'] dd {
   float: left;
   margin: 0;
+}
+[role='contentinfo'] a {
+  color: #e8d8b4;
 }
 .copyright {
   position: absolute;
@@ -328,6 +332,7 @@ section > h1 {
 }
 .gallery img {
   display: block;
+  margin: 0 auto;
 }
 
 .article-image {
@@ -547,7 +552,6 @@ section > h1 {
  * ====================== */
 
 @media (max-width: 932px){
-
   [role='banner'] {
     margin: 1em 0;
   }
@@ -560,6 +564,7 @@ section > h1 {
     top: -4.6em;
   }
 }
+
 @media (max-width: 707px){
   .one-third,
   .two-third,
@@ -578,6 +583,51 @@ section > h1 {
   .one-half,
   .wider-separation .one-half {
     width: 100%;
+  }
+
+  [role='banner'] {
+    margin: 0;
+    background-color: transparent;
+  }
+  .brand {
+    float: left;
+    width: 33%;
+    position: static;
+  }
+  .brand img {
+    display: block;
+    width: auto;
+    max-height: 5.7em;
+    margin: 0 auto;
+    -webkit-transform: scale(1.7);
+       -moz-transform: scale(1.7);
+            transform: scale(1.7);
+  }
+  [role='banner'] nav {
+    float: left;
+    width: 56%;
+    padding: 0 5%;
+  }
+  [role='navigation'] {
+    width: 100%;
+    float: left;
+    font-size: 1.2em;
+  }
+  [role='navigation'] li {
+    width: 50%;
+  }
+  [role='navigation'] li:nth-child(2n -1) {
+    clear: left;
+  }
+  [role='navigation'] a {
+    width: 100%;
+    padding: .5em 0;
+  }
+
+  section > h1 {
+    font-size: 1.75em;
+    margin: .6em 0 .8em;
+    line-height: 1.1;
   }
 
   #elevator {
@@ -604,9 +654,66 @@ section > h1 {
   [role='contentinfo'] dl {
     font-size: 1em;
   }
+
+  .article-image {
+    display: block;
+    float: none;
+    margin: 0;
+  }
+  #acerca h1 {
+    font-size: 2.5em;
+  }
+  #acerca h2 {
+    font-size: 1.3em;
+  }
+  #acerca p {
+    font-size: 1em;
+  }
+
+  .menu {
+    font-size: 1.2em;
+  }
 }
 
+@media (max-width: 537px){
+  body {
+    font-size: .9em;
+  }
+  #elevator,
+  #offer {
+    font-size: 1.2em;
+  }
 
+  [role='contentinfo'] dl {
+    font-size: 1.2em;
+  }
+  [role='contentinfo'] dt {
+    float: none;
+    clear: left;
+    min-width: auto;
+    margin: 0;
+  }
+  [role='contentinfo'] dd {
+    float: none;
+    margin: 0 0 .75em;
+    padding: 0 0 .1em;
+    border-bottom: 1px dotted rgba(232, 216, 180, .5);
+  }
+  .copyright {
+    position: static;
+  }
+}
+
+@media (max-width: 357px){
+  body {
+    font-size: .8em;
+  }
+  .brand img {
+    -webkit-transform: scale(1.4);
+       -moz-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+}
 /* End Media queries */
 
 
